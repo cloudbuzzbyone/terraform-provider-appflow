@@ -194,7 +194,7 @@ This resource supports the following arguments:
 * `kms_arn` - (Optional) ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key.
 * `tags` - (Optional) Key-value mapping of resource tags. If configured with a provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block) present, tags with matching keys will overwrite those defined at the provider-level.
 * `tags_all` - Map of tags assigned to the resource, including those inherited from the provider [`default_tags` configuration block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#default_tags-configuration-block).
-* `flow_status` - (Optional) Specifies the operational state of the flow. Valid values:
+* `flow_status` - (Required) Specifies the operational state of the flow. Valid values:
    - `Active`: The flow operates based on its configuration. Scheduled flows run as per schedule, while event-triggered flows run upon detecting specified events. On-demand flows run only when manually triggered.
    - `Suspended`: Deactivates an active flow. Scheduled and event-triggered flows cease to run until reactivated, with no effect on on-demand flows.
 
