@@ -9,13 +9,13 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/arn"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/fwdiag"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/flex"
+	fwtypes "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
 )
 
 func TestStringFromFramework(t *testing.T) {

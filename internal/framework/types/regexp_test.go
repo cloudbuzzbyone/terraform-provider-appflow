@@ -8,10 +8,10 @@ import (
 	"testing"
 
 	"github.com/YakDriver/regexache"
+	fwtypes "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
 )
 
 func TestRegexpTypeValueFromTerraform(t *testing.T) {

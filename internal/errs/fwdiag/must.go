@@ -4,8 +4,8 @@
 package fwdiag
 
 import (
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
 )
 
 // Must is a generic implementation of the Go Must idiom [1, 2]. It panics if

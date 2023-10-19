@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	tfslices "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/slices"
 	"golang.org/x/exp/slices"
 )
 

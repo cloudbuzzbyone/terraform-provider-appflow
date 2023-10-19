@@ -6,10 +6,10 @@ package sdktypes
 import (
 	"time"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
 	"github.com/hashicorp/go-cty/cty"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
 )
 
 const (

@@ -13,13 +13,13 @@ import (
 
 	"github.com/YakDriver/regexache"
 	"github.com/aws/aws-sdk-go/aws/arn"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types/timestamp"
 	basevalidation "github.com/hashicorp/aws-sdk-go-base/v2/validation"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/structure"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/timestamp"
 )
 
 var accountIDRegexp = regexache.MustCompile(`^(aws|aws-managed|third-party|\d{12}|cw.{10})$`)

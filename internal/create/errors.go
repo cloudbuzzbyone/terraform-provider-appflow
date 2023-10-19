@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	fwdiag "github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 const (

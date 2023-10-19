@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
 )
 
 //

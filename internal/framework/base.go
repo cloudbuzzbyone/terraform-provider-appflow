@@ -7,16 +7,16 @@ import (
 	"context"
 	"time"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/flex"
+	tftags "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tags"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"github.com/hashicorp/terraform-plugin-framework-timeouts/resource/timeouts"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 type withMeta struct {

@@ -11,13 +11,13 @@ import (
 	"github.com/YakDriver/regexache"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/appflow"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/acctest"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	tfappflow "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/service/appflow"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfappflow "github.com/hashicorp/terraform-provider-aws/internal/service/appflow"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
 )
 
 func TestAccAppFlowConnectorProfile_basic(t *testing.T) {

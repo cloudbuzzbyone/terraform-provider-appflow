@@ -7,9 +7,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 func TestKeyValueTagsDefaultConfigGetTags(t *testing.T) {

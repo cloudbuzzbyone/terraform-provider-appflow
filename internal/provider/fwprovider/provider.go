@@ -7,6 +7,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	fwtypes "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/types"
+	tftags "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tags"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	multierror "github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/terraform-plugin-framework-validators/listvalidator"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
@@ -16,10 +20,6 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 // New returns a new, initialized Terraform Plugin Framework-style provider instance.

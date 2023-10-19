@@ -10,13 +10,13 @@ import (
 	"github.com/YakDriver/regexache"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/appflow"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/flex"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/verify"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
 )
 
 // @SDKResource("aws_appflow_connector_profile")

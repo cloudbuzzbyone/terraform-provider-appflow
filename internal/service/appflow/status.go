@@ -8,8 +8,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/appflow"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
 )
 
 func FlowStatus(ctx context.Context, conn *appflow.Appflow, id string) retry.StateRefreshFunc {

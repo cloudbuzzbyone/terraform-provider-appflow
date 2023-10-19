@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
+	fwtypes "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
 )
 
 func TestTimestampValueToTerraformValue(t *testing.T) {

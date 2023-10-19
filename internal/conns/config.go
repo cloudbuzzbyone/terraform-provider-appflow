@@ -10,6 +10,10 @@ import (
 	aws_sdkv2 "github.com/aws/aws-sdk-go-v2/aws"
 	imds_sdkv2 "github.com/aws/aws-sdk-go-v2/feature/ec2/imds"
 	endpoints_sdkv1 "github.com/aws/aws-sdk-go/aws/endpoints"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/sdkdiag"
+	tftags "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tags"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	awsbasev1 "github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2"
 	basediag "github.com/hashicorp/aws-sdk-go-base/v2/diag"
@@ -17,10 +21,6 @@ import (
 	basevalidation "github.com/hashicorp/aws-sdk-go-base/v2/validation"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 type Config struct {

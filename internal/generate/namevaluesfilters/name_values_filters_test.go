@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/create"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/generate/namevaluesfilters"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/namevaluesfilters"
 )
 
 func TestNameValuesFiltersMap(t *testing.T) {

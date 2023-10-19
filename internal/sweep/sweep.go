@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws/endpoints"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/envvar"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/sweep/awsv1"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
 	multierror "github.com/hashicorp/go-multierror"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/envvar"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv1"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
 )
 
 const (

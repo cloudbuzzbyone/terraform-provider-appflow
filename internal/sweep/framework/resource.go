@@ -8,15 +8,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/fwdiag"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	fwresource "github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/tfsdk"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
 )
 
 type attribute struct {

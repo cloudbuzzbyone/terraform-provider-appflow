@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/provider"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/provider"
 )
 
 // go test -bench=BenchmarkProtoV5ProviderServerFactory -benchtime 1x -benchmem -run=B -v ./internal/provider

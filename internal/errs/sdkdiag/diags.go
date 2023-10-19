@@ -7,8 +7,8 @@ import (
 	"errors"
 	"fmt"
 
+	tfslices "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/slices"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
 )
 
 // Errors returns all the Diagnostic in Diagnostics that are SeverityError.

@@ -6,7 +6,7 @@ package tags
 import (
 	"context"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types"
 )
 
 // InContext represents the tagging information kept in Context.

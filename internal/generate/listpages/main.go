@@ -19,7 +19,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"golang.org/x/tools/go/packages"
 )
 

@@ -17,9 +17,9 @@ import (
 	"strings"
 
 	"github.com/YakDriver/regexache"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/generate/common"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	multierror "github.com/hashicorp/go-multierror"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/names"
 	"golang.org/x/exp/slices"
 )
 

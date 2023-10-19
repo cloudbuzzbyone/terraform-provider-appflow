@@ -6,15 +6,15 @@ package provider
 import (
 	"context"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/sdkdiag"
+	tftags "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tags"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 func tagsUpdateFunc(ctx context.Context, d schemaResourceData, sp conns.ServicePackage, spt *types.ServicePackageResourceTags, serviceName, resourceName string, meta any, diags diag.Diagnostics) (context.Context, diag.Diagnostics) {

@@ -7,18 +7,18 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/flex"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/slices"
+	tftags "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tags"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	fwtypes "github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 // A data source interceptor is functionality invoked during the data source's CRUD request lifecycle.

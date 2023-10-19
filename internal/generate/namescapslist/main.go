@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/generate/common"
 )
 
 //go:embed header.tmpl

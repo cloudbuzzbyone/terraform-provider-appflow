@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	tfawserr_sdkv2 "github.com/hashicorp/aws-sdk-go-base/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
 )
 
 // Retryable is a function that is used to decide if a function's error is retryable or not.

@@ -7,10 +7,10 @@ import (
 	"context"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/fwdiag"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/slices"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
 )
 
 func ExpandFrameworkStringList(ctx context.Context, v types.List) []*string {

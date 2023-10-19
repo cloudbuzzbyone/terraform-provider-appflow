@@ -7,12 +7,12 @@ import (
 	"context"
 	"testing"
 
+	fwtypes "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
 )
 
 func TestCIDRBlockTypeValueFromTerraform(t *testing.T) {

@@ -7,12 +7,12 @@ import (
 	"context"
 	"testing"
 
+	fwvalidators "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/validators"
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	fwvalidators "github.com/hashicorp/terraform-provider-aws/internal/framework/validators"
 )
 
 func TestIPv4CIDRNetworkAddressValidator(t *testing.T) {

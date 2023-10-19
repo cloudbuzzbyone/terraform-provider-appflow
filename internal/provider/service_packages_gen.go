@@ -4,8 +4,8 @@ package provider
 
 import (
 	"context"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/service/appflow"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/service/appflow"
 	"golang.org/x/exp/slices"
 )
 

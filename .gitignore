@@ -27,7 +27,6 @@ website/node_modules
 *.iml
 *.test
 *.prof
-*.iml
 log.txt
 markdown-link-check*.txt
 changelog.tmp

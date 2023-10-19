@@ -13,14 +13,14 @@ import (
 	"strings"
 
 	"github.com/YakDriver/regexache"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/create"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/flex"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"github.com/hashicorp/go-cty/cty"
 	fwdiag "github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 const (

@@ -8,8 +8,8 @@ import (
 	"flag"
 	"log"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/provider"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server"
-	"github.com/hashicorp/terraform-provider-aws/internal/provider"
 )
 
 func main() {

@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/flex"
 )
 
 func TestSuppressEquivalentRoundedTime(t *testing.T) {

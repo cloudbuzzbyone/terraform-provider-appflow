@@ -7,10 +7,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/framework/flex"
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
 )
 
 func TestAttributeTypes(t *testing.T) {

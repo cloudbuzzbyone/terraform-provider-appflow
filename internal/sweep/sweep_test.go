@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/sweep"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
 )
 
 func TestMain(m *testing.M) {

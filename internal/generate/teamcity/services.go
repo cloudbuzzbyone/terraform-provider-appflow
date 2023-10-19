@@ -16,9 +16,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/generate/common"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	"github.com/hashicorp/hcl/v2/hclsimple"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 type ServiceDatum struct {

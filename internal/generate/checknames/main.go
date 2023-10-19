@@ -17,8 +17,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 	multierror "github.com/hashicorp/go-multierror"
-	"github.com/hashicorp/terraform-provider-aws/names"
 )
 
 const namesDataFile = "../../../names/names_data.csv"

@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/generate/common"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/names"
 )
 
 type ServiceDatum struct {

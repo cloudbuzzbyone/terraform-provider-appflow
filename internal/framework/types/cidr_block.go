@@ -7,6 +7,7 @@ import (
 	"context"
 	"fmt"
 
+	itypes "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/attr/xattr"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
@@ -14,7 +15,6 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
 )
 
 type cidrBlockType uint8

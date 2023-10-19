@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/conns"
+	tftags "github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tags"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
 )
 
 // Find JSON diff functions in the json.go file.

@@ -9,10 +9,10 @@ import (
 
 	aws_sdkv1 "github.com/aws/aws-sdk-go/aws"
 	session_sdkv1 "github.com/aws/aws-sdk-go/aws/session"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/types"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/version"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	awsbasev1 "github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/version"
 )
 
 // ServicePackage is the minimal interface exported from each AWS service package.
@@ -83,7 +83,7 @@ func StdUserAgentProducts(terraformVersion string) *awsbase.APNInfo {
 		PartnerName: "HashiCorp",
 		Products: []awsbase.UserAgentProduct{
 			{Name: "Terraform", Version: terraformVersion, Comment: "+https://www.terraform.io"},
-			{Name: "terraform-provider-aws", Version: version.ProviderVersion, Comment: "+https://registry.terraform.io/providers/hashicorp/aws"},
+			{Name: "terraform-provider-appflow", Version: version.ProviderVersion, Comment: "+https://registry.terraform.io/providers/cloudbuzzbyone/appflow"},
 		},
 	}
 }

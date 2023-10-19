@@ -6,7 +6,7 @@ package awsv2
 import (
 	"net"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs"
 )
 
 // Check sweeper API call error for reasons to skip sweeping

@@ -6,9 +6,9 @@ package validators
 import (
 	"context"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/verify"
 	"github.com/hashicorp/terraform-plugin-framework-validators/helpers/validatordiag"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
 )
 
 // ipv4CIDRNetworkAddressValidator validates that a string Attribute's value is a valid IPv4 CIDR that represents a network address.

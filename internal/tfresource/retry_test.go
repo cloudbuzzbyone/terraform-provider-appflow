@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/acctest"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/tfresource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
 )
 
 //nolint:tparallel

@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/fwdiag"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
 )
 
 // ListNestedObjectTypeOf is the attribute type of a ListNestedObjectValueOf.

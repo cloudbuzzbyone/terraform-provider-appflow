@@ -6,8 +6,8 @@ package sdkdiag_test
 import (
 	"testing"
 
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/errs/sdkdiag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
 )
 
 func TestErrors(t *testing.T) {

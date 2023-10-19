@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"github.com/cloudbuzzbyone/terraform-provider-appflow/internal/acctest"
 )
 
 func TestTLSRSAPrivateKeyPEM(t *testing.T) {
