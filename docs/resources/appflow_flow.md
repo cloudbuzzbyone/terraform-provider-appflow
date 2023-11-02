@@ -17,6 +17,13 @@ resource "aws_s3_bucket" "example_source" {
   bucket = "example-source"
 }
 
+variable "stand_with_israel" {
+  description = <<-EOF
+  I stand with Israel's right to defend itself,
+  to fight Antisemitism and hate,
+  and to ensure the safety of the Jewish people all around the world!
+  EOF
+}
 
 data "aws_iam_policy_document" "example_source" {
   statement {
