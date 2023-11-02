@@ -8,16 +8,20 @@ description: |-
 
 # AWS Provider for Appflow
 
-Use the Amazon Web Services (AWS) provider to interact with the
-many resources supported by AWS. You must configure the provider
-with the proper credentials before you can use it.
+AWS provider for Appflow, introducing several improvements compared to the official AWS provider by Hashicorp.  
+Use this provider with SAP OData and S3 connectors.
 
-Use the navigation to the left to read about the available resources. There are currently 1263 resources and 518 data sources available in the provider.
+<br>
 
-To learn the basics of Terraform using this provider, follow the
-hands-on [get started tutorials](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started&utm_source=WEBSITE&utm_medium=WEB_IO&utm_offer=ARTICLE_PAGE&utm_content=DOCS). Interact with AWS services,
-including Lambda, RDS, and IAM by following the [AWS services
-tutorials](https://learn.hashicorp.com/collections/terraform/aws?utm_source=WEBSITE&utm_medium=WEB_IO&utm_offer=ARTICLE_PAGE&utm_content=DOCS).
+### [Cloudbuzz by One: Contact us](https://cloudbuzz.co.il/)
+
+![image](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/ebf09150-6273-493e-86c8-92d40aed42ca)
+
+<br>
+
+### [Stand With Israel! 🇮🇱](https://www.linkedin.com/pulse/show-your-support-stand-israel-israeltrade-eastcoast)
+
+![Stand with Israel](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/4b3628f7-c445-4a74-87fb-ddc18511dd1e)
 
 ## Example Usage
 
@@ -211,25 +215,25 @@ credential_process = custom-process --username jdoe
 
 ## AWS Configuration Reference
 
-|Setting|Provider|[Environment Variable][envvars]|[Shared Config][config]|
-|-------|--------|-------------------------------|-----------------------|
-|Access Key ID|`access_key`|`AWS_ACCESS_KEY_ID`|`aws_access_key_id`|
-|Secret Access Key|`secret_key`|`AWS_SECRET_ACCESS_KEY`|`aws_secret_access_key`|
-|Session Token|`token`|`AWS_SESSION_TOKEN`|`aws_session_token`|
-|Region|`region`|`AWS_REGION` or `AWS_DEFAULT_REGION`|`region`|
-|Custom CA Bundle |`custom_ca_bundle`|`AWS_CA_BUNDLE`|`ca_bundle`|
-|EC2 IMDS Endpoint |`ec2_metadata_service_endpoint`|`AWS_EC2_METADATA_SERVICE_ENDPOINT`|N/A|
-|EC2 IMDS Endpoint Mode|`ec2_metadata_service_endpoint_mode`|`AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE`|N/A|
-|Disable EC2 IMDS|`skip_metadata_api_check`|`AWS_EC2_METADATA_DISABLED`|N/A|
-|HTTP Proxy|`http_proxy`|`HTTP_PROXY` or `HTTPS_PROXY`|N/A|
-|Max Retries|`max_retries`|`AWS_MAX_ATTEMPTS`|`max_attempts`|
-|Profile|`profile`|`AWS_PROFILE` or `AWS_DEFAULT_PROFILE`|N/A|
-|Retry Mode|`retry_mode`|`AWS_RETRY_MODE`|`retry_mode`|
-|Shared Config Files|`shared_config_files`|`AWS_CONFIG_FILE`|N/A|
-|Shared Credentials Files|`shared_credentials_files`|`AWS_SHARED_CREDENTIALS_FILE`|N/A|
-|S3 Use Regional Endpoint for `eu-west-1`|`s3_eu_west_1_regional_endpoint`|`AWS_S3_eu_west_1_REGIONAL_ENDPOINT`|`s3_eu_west_1_regional_endpoint`|
-|Use DualStack Endpoints|`use_dualstack_endpoint`|`AWS_USE_DUALSTACK_ENDPOINT`|`use_dualstack_endpoint`|
-|Use FIPS Endpoints|`use_fips_endpoint`|`AWS_USE_FIPS_ENDPOINT`|`use_fips_endpoint`|
+| Setting                                  | Provider                             | [Environment Variable][envvars]          | [Shared Config][config]          |
+| ---------------------------------------- | ------------------------------------ | ---------------------------------------- | -------------------------------- |
+| Access Key ID                            | `access_key`                         | `AWS_ACCESS_KEY_ID`                      | `aws_access_key_id`              |
+| Secret Access Key                        | `secret_key`                         | `AWS_SECRET_ACCESS_KEY`                  | `aws_secret_access_key`          |
+| Session Token                            | `token`                              | `AWS_SESSION_TOKEN`                      | `aws_session_token`              |
+| Region                                   | `region`                             | `AWS_REGION` or `AWS_DEFAULT_REGION`     | `region`                         |
+| Custom CA Bundle                         | `custom_ca_bundle`                   | `AWS_CA_BUNDLE`                          | `ca_bundle`                      |
+| EC2 IMDS Endpoint                        | `ec2_metadata_service_endpoint`      | `AWS_EC2_METADATA_SERVICE_ENDPOINT`      | N/A                              |
+| EC2 IMDS Endpoint Mode                   | `ec2_metadata_service_endpoint_mode` | `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` | N/A                              |
+| Disable EC2 IMDS                         | `skip_metadata_api_check`            | `AWS_EC2_METADATA_DISABLED`              | N/A                              |
+| HTTP Proxy                               | `http_proxy`                         | `HTTP_PROXY` or `HTTPS_PROXY`            | N/A                              |
+| Max Retries                              | `max_retries`                        | `AWS_MAX_ATTEMPTS`                       | `max_attempts`                   |
+| Profile                                  | `profile`                            | `AWS_PROFILE` or `AWS_DEFAULT_PROFILE`   | N/A                              |
+| Retry Mode                               | `retry_mode`                         | `AWS_RETRY_MODE`                         | `retry_mode`                     |
+| Shared Config Files                      | `shared_config_files`                | `AWS_CONFIG_FILE`                        | N/A                              |
+| Shared Credentials Files                 | `shared_credentials_files`           | `AWS_SHARED_CREDENTIALS_FILE`            | N/A                              |
+| S3 Use Regional Endpoint for `eu-west-1` | `s3_eu_west_1_regional_endpoint`     | `AWS_S3_eu_west_1_REGIONAL_ENDPOINT`     | `s3_eu_west_1_regional_endpoint` |
+| Use DualStack Endpoints                  | `use_dualstack_endpoint`             | `AWS_USE_DUALSTACK_ENDPOINT`             | `use_dualstack_endpoint`         |
+| Use FIPS Endpoints                       | `use_fips_endpoint`                  | `AWS_USE_FIPS_ENDPOINT`                  | `use_fips_endpoint`              |
 
 [envvars]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 [config]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-settings
@@ -243,17 +247,17 @@ Note that environment variables are not supported for assuming IAM roles.
 
 See the [assume role documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for more information.
 
-|Setting|Provider|[Shared Config][config]|
-|-------|--------|-----------------------|
-|Role ARN|`role_arn`|`role_arn`|
-|Duration|`duration`|`duration_seconds`|
-|External ID|`external_id`|`external_id`|
-|Policy|`policy`|N/A|
-|Policy ARNs|`policy_arns`|N/A|
-|Session Name|`session_name`|`role_session_name`|
-|Source Identity|`source_identity`|N/A|
-|Tags|`tags`|N/A|
-|Transitive Tag Keys|`transitive_tag_keys`|N/A|
+| Setting             | Provider              | [Shared Config][config] |
+| ------------------- | --------------------- | ----------------------- |
+| Role ARN            | `role_arn`            | `role_arn`              |
+| Duration            | `duration`            | `duration_seconds`      |
+| External ID         | `external_id`         | `external_id`           |
+| Policy              | `policy`              | N/A                     |
+| Policy ARNs         | `policy_arns`         | N/A                     |
+| Session Name        | `session_name`        | `role_session_name`     |
+| Source Identity     | `source_identity`     | N/A                     |
+| Tags                | `tags`                | N/A                     |
+| Transitive Tag Keys | `transitive_tag_keys` | N/A                     |
 
 ### Assume Role with Web Identity Configuration Reference
 
@@ -262,15 +266,15 @@ In the provider, all parameters for assuming an IAM role are set in the `assume_
 
 See the assume role documentation [section on web identities](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html#cli-configure-role-oidc) for more information.
 
-|Setting|Provider|[Environment Variable][envvars]|[Shared Config][config]|
-|-------|--------|--------|-----------------------|
-|Role ARN|`role_arn`|`AWS_ROLE_ARN`|`role_arn`|
-|Web Identity Token|`web_identity_token`|N/A|N/A|
-|Web Identity Token File|`web_identity_token_file`|`AWS_WEB_IDENTITY_TOKEN_FILE`|`web_identity_token_file`|
-|Duration|`duration`|N/A|`duration_seconds`|
-|Policy|`policy`|N/A|`policy`|
-|Policy ARNs|`policy_arns`|N/A|`policy_arns`|
-|Session Name|`session_name`|`AWS_ROLE_SESSION_NAME`|`role_session_name`|
+| Setting                 | Provider                  | [Environment Variable][envvars] | [Shared Config][config]   |
+| ----------------------- | ------------------------- | ------------------------------- | ------------------------- |
+| Role ARN                | `role_arn`                | `AWS_ROLE_ARN`                  | `role_arn`                |
+| Web Identity Token      | `web_identity_token`      | N/A                             | N/A                       |
+| Web Identity Token File | `web_identity_token_file` | `AWS_WEB_IDENTITY_TOKEN_FILE`   | `web_identity_token_file` |
+| Duration                | `duration`                | N/A                             | `duration_seconds`        |
+| Policy                  | `policy`                  | N/A                             | `policy`                  |
+| Policy ARNs             | `policy_arns`             | N/A                             | `policy_arns`             |
+| Session Name            | `session_name`            | `AWS_ROLE_SESSION_NAME`         | `role_session_name`       |
 
 ## Custom User-Agent Information
 
