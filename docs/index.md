@@ -17,7 +17,6 @@ Use this provider with SAP OData and S3 connectors.
 
 [![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/99c0e37e-82fb-4df2-9099-d796cc313ebf)](mailto://info@cloudbuzz.co.il)
 
-
 ### 🇮🇱 [We Stand with Israel!](https://cloudbuzz.co.il) 🇮🇱
 
 [![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/e7cd93a1-105e-4c43-b6ab-fe5029c92b2e)](https://cloudbuzz.co.il)
@@ -92,9 +91,9 @@ provider "aws" {
 
 Other settings related to authorization can be configured, such as:
 
-* `profile`
-* `shared_config_files`
-* `shared_credentials_files`
+- `profile`
+- `shared_config_files`
+- `shared_credentials_files`
 
 ### Environment Variables
 
@@ -116,9 +115,9 @@ provider "aws" {}
 
 Other environment variables related to authorization are:
 
-* `AWS_PROFILE`
-* `AWS_CONFIG_FILE`
-* `AWS_SHARED_CREDENTIALS_FILE`
+- `AWS_PROFILE`
+- `AWS_CONFIG_FILE`
+- `AWS_SHARED_CREDENTIALS_FILE`
 
 ### Shared Configuration and Credentials Files
 
@@ -287,87 +286,87 @@ By default, the underlying AWS client used by the Terraform AWS Provider creates
 
 In addition to [generic `provider` arguments](https://www.terraform.io/docs/configuration/providers.html)
 (e.g., `alias` and `version`), the following arguments are supported in the AWS
- `provider` block:
+`provider` block:
 
-* `access_key` - (Optional) AWS access key. Can also be set with the `AWS_ACCESS_KEY_ID` environment variable, or via a shared credentials file if `profile` is specified. See also `secret_key`.
-* `allowed_account_ids` - (Optional) List of allowed AWS account IDs to prevent you from mistakenly using an incorrect one (and potentially end up destroying a live environment). Conflicts with `forbidden_account_ids`.
-* `assume_role` - (Optional) Configuration block for assuming an IAM role. See the [`assume_role` Configuration Block](#assume_role-configuration-block) section below. Only one `assume_role` block may be in the configuration.
-* `assume_role_with_web_identity` - (Optional) Configuration block for assuming an IAM role using a web identity. See the [`assume_role_with_web_identity` Configuration Block](#assume_role_with_web_identity-configuration-block) section below. Only one `assume_role_with_web_identity` block may be in the configuration.
-* `custom_ca_bundle` - (Optional) File containing custom root and intermediate certificates.
+- `access_key` - (Optional) AWS access key. Can also be set with the `AWS_ACCESS_KEY_ID` environment variable, or via a shared credentials file if `profile` is specified. See also `secret_key`.
+- `allowed_account_ids` - (Optional) List of allowed AWS account IDs to prevent you from mistakenly using an incorrect one (and potentially end up destroying a live environment). Conflicts with `forbidden_account_ids`.
+- `assume_role` - (Optional) Configuration block for assuming an IAM role. See the [`assume_role` Configuration Block](#assume_role-configuration-block) section below. Only one `assume_role` block may be in the configuration.
+- `assume_role_with_web_identity` - (Optional) Configuration block for assuming an IAM role using a web identity. See the [`assume_role_with_web_identity` Configuration Block](#assume_role_with_web_identity-configuration-block) section below. Only one `assume_role_with_web_identity` block may be in the configuration.
+- `custom_ca_bundle` - (Optional) File containing custom root and intermediate certificates.
   Can also be set using the `AWS_CA_BUNDLE` environment variable.
   Setting `ca_bundle` in the shared config file is not supported.
-* `default_tags` - (Optional) Configuration block with resource tag settings to apply across all resources handled by this provider (see the [Terraform multiple provider instances documentation](/docs/configuration/providers.html#alias-multiple-provider-instances) for more information about additional provider configurations). This is designed to replace redundant per-resource `tags` configurations. Provider tags can be overridden with new values, but not excluded from specific resources. To override provider tag values, use the `tags` argument within a resource to configure new tag values for matching keys. See the [`default_tags`](#default_tags-configuration-block) Configuration Block section below for example usage and available arguments. This functionality is supported in all resources that implement `tags`, with the exception of the `aws_autoscaling_group` resource.
-* `ec2_metadata_service_endpoint` - (Optional) Address of the EC2 metadata service (IMDS) endpoint to use. Can also be set with the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
-* `ec2_metadata_service_endpoint_mode` - (Optional) Mode to use in communicating with the metadata service. Valid values are `IPv4` and `IPv6`. Can also be set with the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable.
-* `endpoints` - (Optional) Configuration block for customizing service endpoints. See the [Custom Service Endpoints Guide](/docs/providers/aws/guides/custom-service-endpoints.html) for more information about connecting to alternate AWS endpoints or AWS compatible solutions. See also `use_fips_endpoint`.
-* `forbidden_account_ids` - (Optional) List of forbidden AWS account IDs to prevent you from mistakenly using the wrong one (and potentially end up destroying a live environment). Conflicts with `allowed_account_ids`.
-* `http_proxy` - (Optional) Address of an HTTP proxy to use when accessing the AWS API. Can also be set using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
-* `ignore_tags` - (Optional) Configuration block with resource tag settings to ignore across all resources handled by this provider (except any individual service tag resources such as `aws_ec2_tag`) for situations where external systems are managing certain resource tags. Arguments to the configuration block are described below in the `ignore_tags` Configuration Block section. See the [Terraform multiple provider instances documentation](https://www.terraform.io/docs/configuration/providers.html#alias-multiple-provider-configurations) for more information about additional provider configurations.
-* `insecure` - (Optional) Whether to explicitly allow the provider to perform "insecure" SSL requests. If omitted, the default value is `false`.
-* `max_retries` - (Optional) Maximum number of times an API call is retried when AWS throttles requests or you experience transient failures.
+- `default_tags` - (Optional) Configuration block with resource tag settings to apply across all resources handled by this provider (see the [Terraform multiple provider instances documentation](/docs/configuration/providers.html#alias-multiple-provider-instances) for more information about additional provider configurations). This is designed to replace redundant per-resource `tags` configurations. Provider tags can be overridden with new values, but not excluded from specific resources. To override provider tag values, use the `tags` argument within a resource to configure new tag values for matching keys. See the [`default_tags`](#default_tags-configuration-block) Configuration Block section below for example usage and available arguments. This functionality is supported in all resources that implement `tags`, with the exception of the `aws_autoscaling_group` resource.
+- `ec2_metadata_service_endpoint` - (Optional) Address of the EC2 metadata service (IMDS) endpoint to use. Can also be set with the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
+- `ec2_metadata_service_endpoint_mode` - (Optional) Mode to use in communicating with the metadata service. Valid values are `IPv4` and `IPv6`. Can also be set with the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable.
+- `endpoints` - (Optional) Configuration block for customizing service endpoints. See the [Custom Service Endpoints Guide](/docs/providers/aws/guides/custom-service-endpoints.html) for more information about connecting to alternate AWS endpoints or AWS compatible solutions. See also `use_fips_endpoint`.
+- `forbidden_account_ids` - (Optional) List of forbidden AWS account IDs to prevent you from mistakenly using the wrong one (and potentially end up destroying a live environment). Conflicts with `allowed_account_ids`.
+- `http_proxy` - (Optional) Address of an HTTP proxy to use when accessing the AWS API. Can also be set using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
+- `ignore_tags` - (Optional) Configuration block with resource tag settings to ignore across all resources handled by this provider (except any individual service tag resources such as `aws_ec2_tag`) for situations where external systems are managing certain resource tags. Arguments to the configuration block are described below in the `ignore_tags` Configuration Block section. See the [Terraform multiple provider instances documentation](https://www.terraform.io/docs/configuration/providers.html#alias-multiple-provider-configurations) for more information about additional provider configurations.
+- `insecure` - (Optional) Whether to explicitly allow the provider to perform "insecure" SSL requests. If omitted, the default value is `false`.
+- `max_retries` - (Optional) Maximum number of times an API call is retried when AWS throttles requests or you experience transient failures.
   The delay between the subsequent API calls increases exponentially.
   If omitted, the default value is `25`.
   Can also be set using the environment variable `AWS_MAX_ATTEMPTS`
   and the shared configuration parameter `max_attempts`.
-* `profile` - (Optional) AWS profile name as set in the shared configuration and credentials files.
+- `profile` - (Optional) AWS profile name as set in the shared configuration and credentials files.
   Can also be set using either the environment variables `AWS_PROFILE` or `AWS_DEFAULT_PROFILE`.
-* `region` - (Optional) AWS region where the provider will operate. The region must be set.
+- `region` - (Optional) AWS region where the provider will operate. The region must be set.
   Can also be set with either the `AWS_REGION` or `AWS_DEFAULT_REGION` environment variables,
   or via a shared config file parameter `region` if `profile` is used.
   If credentials are retrieved from the EC2 Instance Metadata Service, the region can also be retrieved from the metadata.
-* `retry_mode` - (Optional) Specifies how retries are attempted.
+- `retry_mode` - (Optional) Specifies how retries are attempted.
   Valid values are `standard` and `adaptive`.
   Can also be configured using the `AWS_RETRY_MODE` environment variable or the shared config file parameter `retry_mode`.
-* `s3_use_path_style` - (Optional) Whether to enable the request to use path-style addressing, i.e., `https://s3.amazonaws.com/BUCKET/KEY`.
+- `s3_use_path_style` - (Optional) Whether to enable the request to use path-style addressing, i.e., `https://s3.amazonaws.com/BUCKET/KEY`.
   By default, the S3 client will use virtual hosted bucket addressing, `https://BUCKET.s3.amazonaws.com/KEY`, when possible.
   Specific to the Amazon S3 service.
-* `s3_eu_west_1_regional_endpoint` - (Optional) Specifies whether S3 API calls in the `eu-west-1` region use the legacy global endpoint or a regional endpoint.
+- `s3_eu_west_1_regional_endpoint` - (Optional) Specifies whether S3 API calls in the `eu-west-1` region use the legacy global endpoint or a regional endpoint.
   Valid values are `legacy` or `regional`.
   Can also be configured using the `AWS_S3_eu_west_1_REGIONAL_ENDPOINT` environment variable or the `s3_eu_west_1_regional_endpoint` shared config file parameter.
   Specific to the Amazon S3 service.
-* `secret_key` - (Optional) AWS secret key. Can also be set with the `AWS_SECRET_ACCESS_KEY` environment variable, or via a shared configuration and credentials files if `profile` is used. See also `access_key`.
-* `shared_config_files` - (Optional) List of paths to AWS shared config files. If not set, the default is `[~/.aws/config]`. A single value can also be set with the `AWS_CONFIG_FILE` environment variable.
-* `shared_credentials_files` - (Optional) List of paths to the shared credentials file. If not set and a profile is used, the default value is `[~/.aws/credentials]`. A single value can also be set with the `AWS_SHARED_CREDENTIALS_FILE` environment variable.
-* `skip_credentials_validation` - (Optional) Whether to skip credentials validation via the STS API. This can be useful for testing and for AWS API implementations that do not have STS available.
-* `skip_metadata_api_check` - (Optional) Whether to skip the AWS Metadata API check.  Useful for AWS API implementations that do not have a metadata API endpoint.  Setting to `true` prevents Terraform from authenticating via the Metadata API. You may need to use other authentication methods like static credentials, configuration variables, or environment variables.
-* `skip_region_validation` - (Optional) Whether to skip validating the region. Useful for AWS-like implementations that use their own region names or to bypass the validation for regions that aren't publicly available yet.
-* `skip_requesting_account_id` - (Optional) Whether to skip requesting the account ID.  Useful for AWS API implementations that do not have the IAM, STS API, or metadata API.  When set to `true` and not determined previously, returns an empty account ID when manually constructing ARN attributes with the following:
-    - [`aws_appflow_flow` resource](/docs/providers/aws/r/appflow_flow.html)
-    - [`aws_appflow_connector_profile` resource](/docs/providers/aws/r/appflow_connector_profile.html)
-* `token` - (Optional) Session token for validating temporary credentials. Typically provided after successful identity federation or Multi-Factor Authentication (MFA) login. With MFA login, this is the session token provided afterward, not the 6 digit MFA code used to get temporary credentials.  Can also be set with the `AWS_SESSION_TOKEN` environment variable.
-* `use_dualstack_endpoint` - (Optional) Force the provider to resolve endpoints with DualStack capability. Can also be set with the `AWS_USE_DUALSTACK_ENDPOINT` environment variable or in a shared config file (`use_dualstack_endpoint`).
-* `use_fips_endpoint` - (Optional) Force the provider to resolve endpoints with FIPS capability. Can also be set with the `AWS_USE_FIPS_ENDPOINT` environment variable or in a shared config file (`use_fips_endpoint`).
+- `secret_key` - (Optional) AWS secret key. Can also be set with the `AWS_SECRET_ACCESS_KEY` environment variable, or via a shared configuration and credentials files if `profile` is used. See also `access_key`.
+- `shared_config_files` - (Optional) List of paths to AWS shared config files. If not set, the default is `[~/.aws/config]`. A single value can also be set with the `AWS_CONFIG_FILE` environment variable.
+- `shared_credentials_files` - (Optional) List of paths to the shared credentials file. If not set and a profile is used, the default value is `[~/.aws/credentials]`. A single value can also be set with the `AWS_SHARED_CREDENTIALS_FILE` environment variable.
+- `skip_credentials_validation` - (Optional) Whether to skip credentials validation via the STS API. This can be useful for testing and for AWS API implementations that do not have STS available.
+- `skip_metadata_api_check` - (Optional) Whether to skip the AWS Metadata API check. Useful for AWS API implementations that do not have a metadata API endpoint. Setting to `true` prevents Terraform from authenticating via the Metadata API. You may need to use other authentication methods like static credentials, configuration variables, or environment variables.
+- `skip_region_validation` - (Optional) Whether to skip validating the region. Useful for AWS-like implementations that use their own region names or to bypass the validation for regions that aren't publicly available yet.
+- `skip_requesting_account_id` - (Optional) Whether to skip requesting the account ID. Useful for AWS API implementations that do not have the IAM, STS API, or metadata API. When set to `true` and not determined previously, returns an empty account ID when manually constructing ARN attributes with the following:
+  - [`aws_appflow_flow` resource](/docs/providers/aws/r/appflow_flow.html)
+  - [`aws_appflow_connector_profile` resource](/docs/providers/aws/r/appflow_connector_profile.html)
+- `token` - (Optional) Session token for validating temporary credentials. Typically provided after successful identity federation or Multi-Factor Authentication (MFA) login. With MFA login, this is the session token provided afterward, not the 6 digit MFA code used to get temporary credentials. Can also be set with the `AWS_SESSION_TOKEN` environment variable.
+- `use_dualstack_endpoint` - (Optional) Force the provider to resolve endpoints with DualStack capability. Can also be set with the `AWS_USE_DUALSTACK_ENDPOINT` environment variable or in a shared config file (`use_dualstack_endpoint`).
+- `use_fips_endpoint` - (Optional) Force the provider to resolve endpoints with FIPS capability. Can also be set with the `AWS_USE_FIPS_ENDPOINT` environment variable or in a shared config file (`use_fips_endpoint`).
 
 ### assume_role Configuration Block
 
 The `assume_role` configuration block supports the following arguments:
 
-* `duration` - (Optional) Duration of the assume role session. You can provide a value from 15 minutes up to the maximum session duration setting for the role. Represented by a string such as `1h`, `2h45m`, or `30m15s`.
-* `external_id` - (Optional) External identifier to use when assuming the role.
-* `policy` - (Optional) IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
-* `policy_arns` - (Optional) Set of Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
-* `role_arn` - (Required) ARN of the IAM Role to assume.
-* `session_name` - (Optional) Session name to use when assuming the role.
-* `source_identity` - (Optional) Source identity specified by the principal assuming the role.
-* `tags` - (Optional) Map of assume role session tags.
-* `transitive_tag_keys` - (Optional) Set of assume role session tag keys to pass to any subsequent sessions.
+- `duration` - (Optional) Duration of the assume role session. You can provide a value from 15 minutes up to the maximum session duration setting for the role. Represented by a string such as `1h`, `2h45m`, or `30m15s`.
+- `external_id` - (Optional) External identifier to use when assuming the role.
+- `policy` - (Optional) IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
+- `policy_arns` - (Optional) Set of Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
+- `role_arn` - (Required) ARN of the IAM Role to assume.
+- `session_name` - (Optional) Session name to use when assuming the role.
+- `source_identity` - (Optional) Source identity specified by the principal assuming the role.
+- `tags` - (Optional) Map of assume role session tags.
+- `transitive_tag_keys` - (Optional) Set of assume role session tag keys to pass to any subsequent sessions.
 
 ### assume_role_with_web_identity Configuration Block
 
 The `assume_role_with_web_identity` configuration block supports the following arguments:
 
-* `duration` - (Optional) Duration of the assume role session.
+- `duration` - (Optional) Duration of the assume role session.
   You can provide a value from 15 minutes up to the maximum session duration setting for the role.
   Represented by a string such as `1h`, `2h45m`, or `30m15s`.
-* `policy` - (Optional) IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
-* `policy_arns` - (Optional) Set of Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
-* `role_arn` - (Required) ARN of the IAM Role to assume.
+- `policy` - (Optional) IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
+- `policy_arns` - (Optional) Set of Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
+- `role_arn` - (Required) ARN of the IAM Role to assume.
   Can also be set with the `AWS_ROLE_ARN` environment variable.
-* `session_name` - (Optional) Session name to use when assuming the role.
+- `session_name` - (Optional) Session name to use when assuming the role.
   Can also be set with the `AWS_ROLE_SESSION_NAME` environment variable.
-* `web_identity_token` - (Optional) Value of a web identity token from an OpenID Connect (OIDC) or OAuth provider.
+- `web_identity_token` - (Optional) Value of a web identity token from an OpenID Connect (OIDC) or OAuth provider.
   One of `web_identity_token` or `web_identity_token_file` is required.
-* `web_identity_token_file` - (Optional) File containing a web identity token from an OpenID Connect (OIDC) or OAuth provider.
+- `web_identity_token_file` - (Optional) File containing a web identity token from an OpenID Connect (OIDC) or OAuth provider.
   One of `web_identity_token_file` or `web_identity_token` is required.
   Can also be set with the `AWS_WEB_IDENTITY_TOKEN_FILE` environment variable.
 
@@ -504,7 +503,7 @@ vpc_resource_level_tags = tomap({
 
 The `default_tags` configuration block supports the following argument:
 
-* `tags` - (Optional) Key-value map of tags to apply to all resources.
+- `tags` - (Optional) Key-value map of tags to apply to all resources.
 
 ### ignore_tags Configuration Block
 
@@ -520,8 +519,8 @@ provider "aws" {
 
 The `ignore_tags` configuration block supports the following arguments:
 
-* `keys` - (Optional) List of exact resource tag keys to ignore across all resources handled by this provider. This configuration prevents Terraform from returning the tag in any `tags` attributes and displaying any configuration difference for the tag value. If any resource configuration still has this tag key configured in the `tags` argument, it will display a perpetual difference until the tag is removed from the argument or [`ignore_changes`](https://www.terraform.io/docs/configuration/meta-arguments/lifecycle.html#ignore_changes) is also used.
-* `key_prefixes` - (Optional) List of resource tag key prefixes to ignore across all resources handled by this provider. This configuration prevents Terraform from returning any tag key matching the prefixes in any `tags` attributes and displaying any configuration difference for those tag values. If any resource configuration still has a tag matching one of the prefixes configured in the `tags` argument, it will display a perpetual difference until the tag is removed from the argument or [`ignore_changes`](https://www.terraform.io/docs/configuration/meta-arguments/lifecycle.html#ignore_changes) is also used.
+- `keys` - (Optional) List of exact resource tag keys to ignore across all resources handled by this provider. This configuration prevents Terraform from returning the tag in any `tags` attributes and displaying any configuration difference for the tag value. If any resource configuration still has this tag key configured in the `tags` argument, it will display a perpetual difference until the tag is removed from the argument or [`ignore_changes`](https://www.terraform.io/docs/configuration/meta-arguments/lifecycle.html#ignore_changes) is also used.
+- `key_prefixes` - (Optional) List of resource tag key prefixes to ignore across all resources handled by this provider. This configuration prevents Terraform from returning any tag key matching the prefixes in any `tags` attributes and displaying any configuration difference for those tag values. If any resource configuration still has a tag matching one of the prefixes configured in the `tags` argument, it will display a perpetual difference until the tag is removed from the argument or [`ignore_changes`](https://www.terraform.io/docs/configuration/meta-arguments/lifecycle.html#ignore_changes) is also used.
 
 ## Getting the Account ID
 
@@ -531,17 +530,17 @@ in order to compare it with allowed or forbidden IDs.
 
 Approaches differ per authentication providers:
 
-* EC2 instance w/ IAM Instance Profile - [Metadata API](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
-    is always used. Introduced in Terraform `0.6.16`.
-* All other providers (environment variable, shared credentials file, ...)
-    will try three approaches in the following order
-    * `iam:GetUser` - Typically useful for IAM Users. It also means
-      that each user needs to be privileged to call `iam:GetUser` for themselves.
-    * `sts:GetCallerIdentity` - _Should_ work for both IAM Users and federated IAM Roles,
-      introduced in Terraform `0.6.16`.
-    * `iam:ListRoles` - This is specifically useful for IdP-federated profiles
-      which cannot use `iam:GetUser`. It also means that each federated user
-      need to be _assuming_ an IAM role which allows `iam:ListRoles`.
-      Used in Terraform `0.6.16+`.
-      There used to be no better way to get account ID out of the API
-      when using the federated account until `sts:GetCallerIdentity` was introduced.
+- EC2 instance w/ IAM Instance Profile - [Metadata API](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
+  is always used. Introduced in Terraform `0.6.16`.
+- All other providers (environment variable, shared credentials file, ...)
+  will try three approaches in the following order
+  - `iam:GetUser` - Typically useful for IAM Users. It also means
+    that each user needs to be privileged to call `iam:GetUser` for themselves.
+  - `sts:GetCallerIdentity` - _Should_ work for both IAM Users and federated IAM Roles,
+    introduced in Terraform `0.6.16`.
+  - `iam:ListRoles` - This is specifically useful for IdP-federated profiles
+    which cannot use `iam:GetUser`. It also means that each federated user
+    need to be _assuming_ an IAM role which allows `iam:ListRoles`.
+    Used in Terraform `0.6.16+`.
+    There used to be no better way to get account ID out of the API
+    when using the federated account until `sts:GetCallerIdentity` was introduced.
