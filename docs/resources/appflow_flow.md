@@ -6,9 +6,19 @@ description: |-
   Provides an AppFlow Flow resource.
 ---
 
-# Resource: aws_appflow_flow
+# 🇮🇱 Resource: aws_appflow_flow 🇮🇱
 
 Provides an AppFlow flow resource.
+
+### [Cloudbuzz by One: Contact Us](mailto://info@cloudbuzz.co.il)
+
+[![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/99c0e37e-82fb-4df2-9099-d796cc313ebf)](mailto://info@cloudbuzz.co.il)
+
+
+### 🇮🇱 [We Stand with Israel!](https://cloudbuzz.co.il) 🇮🇱
+
+[![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/e7cd93a1-105e-4c43-b6ab-fe5029c92b2e)](https://cloudbuzz.co.il)
+
 
 ## Example Usage
 

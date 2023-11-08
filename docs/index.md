@@ -6,22 +6,21 @@ description: |-
   Use this provider with SAP OData and S3 connectors.
 ---
 
-# AWS Provider for Appflow
+# 🇮🇱 AWS Provider for Appflow 🇮🇱
 
 AWS provider for Appflow, introducing several improvements compared to the official AWS provider by Hashicorp.  
 Use this provider with SAP OData and S3 connectors.
 
 <br>
 
-### [Cloudbuzz by One: Contact us](https://cloudbuzz.co.il/)
+### [Cloudbuzz by One: Contact Us](mailto://info@cloudbuzz.co.il)
 
-![image](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/ebf09150-6273-493e-86c8-92d40aed42ca)
+[![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/99c0e37e-82fb-4df2-9099-d796cc313ebf)](mailto://info@cloudbuzz.co.il)
 
-<br>
 
-### [Stand With Israel! 🇮🇱](https://www.linkedin.com/pulse/show-your-support-stand-israel-israeltrade-eastcoast)
+### 🇮🇱 [We Stand with Israel!](https://cloudbuzz.co.il) 🇮🇱
 
-![Stand with Israel](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/4b3628f7-c445-4a74-87fb-ddc18511dd1e)
+[![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/e7cd93a1-105e-4c43-b6ab-fe5029c92b2e)](https://cloudbuzz.co.il)
 
 ## Example Usage
 

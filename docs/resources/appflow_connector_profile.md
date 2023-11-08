@@ -6,13 +6,23 @@ description: |-
   Provides an AppFlow Connector Profile resource.
 ---
 
-# Resource: aws_appflow_connector_profile
+# 🇮🇱 Resource: aws_appflow_connector_profile 🇮🇱
 
 Provides an AppFlow connector profile resource.
 
 For information about AppFlow flows, see the [Amazon AppFlow API Reference][1].
 For specific information about creating an AppFlow connector profile, see the
 [CreateConnectorProfile][2] page in the Amazon AppFlow API Reference.
+
+### [Cloudbuzz by One: Contact Us](mailto://info@cloudbuzz.co.il)
+
+[![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/99c0e37e-82fb-4df2-9099-d796cc313ebf)](mailto://info@cloudbuzz.co.il)
+
+
+### 🇮🇱 [We Stand with Israel!](https://cloudbuzz.co.il) 🇮🇱
+
+[![](https://github.com/cloudbuzzbyone/terraform-provider-appflow/assets/110726427/e7cd93a1-105e-4c43-b6ab-fe5029c92b2e)](https://cloudbuzz.co.il)
+
 
 ## Example Usage
 
